@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Cards</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <!-- Card Navigation -->
+  <nav id="cardNav">
+    <div class="card-container" id="cardContainer">
+      <div class="card" tabindex="0" role="button" aria-label="Flip Card 1">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">Home</div>
+        </div>
+        <div class="card-title">Home</div>
+      </div>
+      <div class="card" tabindex="0" role="button" aria-label="Flip Card 2">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">Portfolio</div>
+        </div>
+        <div class="card-title">Portfolio</div>
+      </div>
+      <div class="card" tabindex="0" role="button" aria-label="Flip Card 3">
+        <div class="card-inner">
+          <div class="card-front"></div>
+          <div class="card-back">Socials</div>
+        </div>
+        <div class="card-title">Socials</div>
+      </div>
+    </div>
+
+    <!-- Bottom Text -->
+    <div class="bottom-text" id="bottomText">Pick a card to navigate</div>
+  </nav>
+
+  <!-- Content Container -->
+  <div id="contentContainer" class="content-container">
+    <!-- Content will be loaded here -->
+  </div>
+
+  <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
